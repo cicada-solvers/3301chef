@@ -1,0 +1,79 @@
+/**
+ * Modal layout styles
+ *
+ * @author n1474335 [n1474335@gmail.com]
+ * @copyright Crown Copyright 2017
+ * @license Apache-2.0
+ */
+
+.modal-content {
+    background-color: var(--primary-background-colour);
+}
+
+.option-item {
+    margin-bottom: 20px;
+}
+
+#edit-favourites-list {
+    margin: 10px;
+    border: 1px solid var(--op-list-operation-border-colour);
+}
+
+#edit-favourites-list .operation {
+    border-left: none;
+    border-right: none;
+}
+
+#edit-favourites-list .operation:last-child {
+    border-bottom: none;
+}
+
+.about-img-left {
+    float: left;
+    margin: 10px 20px 20px 0;
+}
+
+.about-img-right {
+    float: right;
+    margin: 10px 0 20px 20px;
+}
+
+#save-link-group {
+    padding-top: 0;
+}
+
+.save-link-options {
+    float: right;
+}
+
+.save-link-options label {
+    margin-left: 10px;
+}
+
+#save-footer {
+    border-top: none;
+    margin-top: 0;
+    border-bottom: 1px solid var(--primary-border-colour);
+}
+
+#support-modal textarea {
+    font-family: var(--primary-font-family);
+}
+
+#save-texts textarea,
+#load-text {
+    font-family: var(--fixed-width-font-family);
+}
+
+#save-texts textarea {
+    height: 200px;
+}
+
+#faqs a.btn {
+    text-transform: unset;
+}
+
+#faqs > div {
+    padding: 20px;
+    border-left: 2px solid var(--primary-border-colour);
+}

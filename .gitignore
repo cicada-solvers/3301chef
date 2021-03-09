@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log
+travis.log
+build
+docs/*
+!docs/*.conf.json
+!docs/*.ico
+.vscode
+src/core/config/modules/*
+src/core/config/OperationConfig.json
+src/core/operations/index.mjs

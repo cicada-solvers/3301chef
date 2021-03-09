@@ -1,0 +1,45 @@
+/**
+ * Controls area styles
+ *
+ * @author n1474335 [n1474335@gmail.com]
+ * @copyright Crown Copyright 2017
+ * @license Apache-2.0
+ */
+
+:root {
+    --controls-height: 75px;
+}
+
+#controls {
+    position: absolute;
+    width: 100%;
+    height: var(--controls-height);
+    bottom: 0;
+    padding: 10px;
+    padding-top: 12px;
+    border-top: 1px solid var(--primary-border-colour);
+    background-color: var(--secondary-background-colour);
+}
+
+#auto-bake-label {
+    display: inline-block;
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: var(--primary-font-colour);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#auto-bake-label .checkbox-decorator {
+    position: relative;
+}
+
+#bake {
+    box-shadow: none;
+}
+
+#controls .btn {
+    border-radius: 30px;
+}

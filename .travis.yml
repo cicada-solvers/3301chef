@@ -1,0 +1,48 @@
+language: node_js
+node_js:
+  - node
+install: npm install
+before_script:
+  - npm install -g grunt
+script:
+  - grunt lint
+  - grunt test
+  - grunt docs
+  - grunt node
+  - grunt prod --msg="$COMPILE_MSG"
+before_deploy:
+  - grunt exec:sitemap
+  - grunt copy:ghPages
+deploy:
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    local_dir: build/prod/
+    target_branch: gh-pages
+    on:
+      repo: gchq/CyberChef
+      branch: master
+  - provider: releases
+    skip_cleanup: true
+    api_key:
+      secure: "..."
+    file:
+      - build/prod/cyberchef.htm
+      - build/node/CyberChef.js
+    on:
+      repo: gchq/CyberChef
+      tags: true
+  - provider: npm
+    skip_cleanup: true
+    email: "..."
+    api_key:
+      secure: "..."
+    on:
+      tags: true
+      branch: master
+notifications:
+    webhooks:
+        urls: []
+        on_success: change
+        on_failure: always
+        on_start: never
