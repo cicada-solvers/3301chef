@@ -1,7 +1,7 @@
 node_modules
 npm-debug.log
 travis.log
-build
+
 .vscode
 .*.swp
 src/core/config/modules/*
