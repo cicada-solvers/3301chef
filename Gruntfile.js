@@ -26,7 +26,7 @@ module.exports = function (grunt) {
     grunt.registerTask("prod",
         "Creates a production-ready build. Use the --msg flag to add a compile message.",
         [
-            "eslint", "clean:prod", "clean:config", "exec:generateConfig", "findModules", "webpack:web",
+             "clean:prod", "clean:config", "exec:generateConfig", "findModules", "webpack:web",
             "copy:standalone", "zip:standalone", "clean:standalone", "chmod"
         ]);
 
@@ -52,9 +52,9 @@ module.exports = function (grunt) {
 
     grunt.registerTask("default",
         "Lints the code base",
-        ["eslint", "exec:repoSize"]);
+        [ "exec:repoSize"]);
 
-    grunt.registerTask("lint", "eslint");
+    //grunt.registerTask("lint", "eslint");
 
     grunt.registerTask("findModules",
         "Finds all generated modules and updates the entry point list for Webpack",
@@ -71,7 +71,7 @@ module.exports = function (grunt) {
 
 
     // Load tasks provided by each plugin
-    grunt.loadNpmTasks("grunt-eslint");
+    //grunt.loadNpmTasks("grunt-eslint");
     grunt.loadNpmTasks("grunt-webpack");
     grunt.loadNpmTasks("grunt-contrib-clean");
     grunt.loadNpmTasks("grunt-contrib-copy");
@@ -186,16 +186,16 @@ module.exports = function (grunt) {
             nodeConfig: ["src/node/index.mjs", "src/node/config/OperationConfig.json"],
             standalone: ["build/prod/CyberChef*.html"]
         },
-        eslint: {
-            options: {
-                configFile: "./.eslintrc.json"
-            },
-            configs: ["*.{js,mjs}"],
-            core: ["src/core/**/*.{js,mjs}", "!src/core/vendor/**/*", "!src/core/operations/legacy/**/*"],
-            web: ["src/web/**/*.{js,mjs}", "!src/web/static/**/*"],
-            node: ["src/node/**/*.{js,mjs}"],
-            tests: ["tests/**/*.{js,mjs}"],
-        },
+        //eslint: {
+           // options: {
+                //configFile: "./.eslintrc.json"
+            //},
+            //configs: ["*.{js,mjs}"],
+            //core: ["src/core/**/*.{js,mjs}", "!src/core/vendor/**/*", "!src/core/operations/legacy/**/*"],
+            //web: ["src/web/**/*.{js,mjs}", "!src/web/static/**/*"],
+            //node: ["src/node/**/*.{js,mjs}"],
+            //tests: ["tests/**/*.{js,mjs}"],
+        //},
         webpack: {
             options: webpackConfig,
             web: webpackProdConf(),
