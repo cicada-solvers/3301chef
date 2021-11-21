@@ -19,4 +19,8 @@ export const ALPHABET_OPTIONS = [
         name: "Ripple",
         value: "rpshnaf39wBUDNEGHJKLM4PQRST7VWXYZ2bcdeCg65jkm8oFqi1tuvAxyz",
     },
+    {
+        name: "3301",
+        value: "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz",
+    },
 ];

@@ -1,10 +1,14 @@
 node_modules
 npm-debug.log
 travis.log
-docs/*
-!docs/*.conf.json
-!docs/*.ico
+.idea
 .vscode
+.*.swp
 src/core/config/modules/*
 src/core/config/OperationConfig.json
 src/core/operations/index.mjs
+src/node/config/OperationConfig.json
+src/node/index.mjs
+**/*.DS_Store
+tests/browser/output/*
+

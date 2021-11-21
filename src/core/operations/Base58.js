@@ -24,7 +24,11 @@ const Base58 = {
         {
             name: "Ripple",
             value: "rpshnaf39wBUDNEGHJKLM4PQRST7VWXYZ2bcdeCg65jkm8oFqi1tuvAxyz",
-        },
+        }, 
+        {
+            name: "3301",
+            value: "0123456789aAbBcCdDeEFgGhHijJkKlLmMnNoOpPqQrRsStTuUvVwWxXYZ",
+        }, 
     ],
     /**
      * @constant

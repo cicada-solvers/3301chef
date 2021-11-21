@@ -9,7 +9,7 @@
 /**
  * Runs bitwise operations across the input data.
  *
- * @param {byteArray} input
+ * @param {byteArray|Uint8Array} input
  * @param {byteArray} key
  * @param {function} func - The bitwise calculation to carry out
  * @param {boolean} nullPreserving
@@ -34,10 +34,10 @@ export function bitOp (input, key, func, nullPreserving, scheme) {
             !(nullPreserving && (o === 0 || o === k))) {
             switch (scheme) {
                 case "Input differential":
-                    key[i % key.length] = x;
+                    key[i % key.length] = o;
                     break;
                 case "Output differential":
-                    key[i % key.length] = o;
+                    key[i % key.length] = x;
                     break;
             }
         }
@@ -116,3 +116,9 @@ export function sub(operand, key) {
     const result = operand - key;
     return (result < 0) ? 256 + result : result;
 }
+
+
+/**
+ * Delimiter options for bitwise operations
+ */
+export const BITWISE_OP_DELIMS = ["Hex", "Decimal", "Binary", "Base64", "UTF8", "Latin1"];

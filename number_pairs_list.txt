@@ -1,0 +1,342 @@
+00
+00
+04
+05
+06
+0A
+0D
+0D
+0E
+0E
+0F
+0G
+0I
+0I
+0J
+0K
+0L
+0M
+0P
+0P
+0S
+0S
+0V
+0W
+0W
+0W
+0X
+0X
+0X
+0Y
+0Z
+0Z
+0a
+0c
+0d
+0e
+0g
+0g
+0k
+0k
+0l
+0l
+0n
+0p
+0p
+0q
+0q
+0q
+0s
+0s
+0s
+0s
+0u
+0u
+0v
+0w
+0w
+0x
+0x
+0x
+11
+13
+15
+16
+18
+18
+19
+1A
+1C
+1C
+1D
+1D
+1D
+1D
+1E
+1G
+1G
+1J
+1K
+1K
+1K
+1K
+1L
+1L
+1M
+1M
+1N
+1O
+1O
+1O
+1Q
+1Q
+1Q
+1R
+1T
+1W
+1W
+1b
+1g
+1j
+1j
+1k
+1k
+1l
+1m
+1n
+1o
+1p
+1q
+1r
+1s
+1s
+1t
+1t
+1t
+1v
+1v
+1w
+20
+21
+21
+22
+22
+24
+25
+26
+27
+28
+29
+29
+2B
+2D
+2D
+2H
+2L
+2L
+2L
+2M
+2M
+2N
+2O
+2O
+2O
+2O
+2Q
+2S
+2S
+2U
+2U
+2U
+2V
+2W
+2X
+2Z
+2a
+2a
+2a
+2c
+2d
+2e
+2h
+2i
+2k
+2l
+2l
+2n
+2n
+2o
+2p
+2p
+2p
+2q
+2r
+2r
+2r
+2r
+2s
+2t
+2t
+2t
+2u
+2v
+2x
+30
+33
+33
+34
+34
+36
+39
+39
+3C
+3C
+3C
+3C
+3D
+3D
+3E
+3G
+3G
+3H
+3H
+3I
+3I
+3I
+3J
+3J
+3L
+3L
+3M
+3N
+3P
+3Q
+3T
+3T
+3U
+3V
+3W
+3Y
+3b
+3c
+3d
+3e
+3g
+3g
+3m
+3n
+3o
+3o
+3p
+3p
+3r
+3r
+3s
+3t
+3u
+3v
+3v
+3w
+40
+45
+46
+47
+47
+48
+48
+49
+49
+49
+4A
+4B
+4B
+4D
+4E
+4E
+4F
+
+
+
+{
+  "0":65,
+  "1":61,
+  "2":67,
+  "3":59,
+  "4":21,
+  "5":4,
+  "6":5,
+  "7":3,
+  "8":5,
+  "9":8,
+  "A":3,"B":3,"C":6,"D":11,"E":6,"F":2,"G":5,
+  "H":3,"I":5,"J":4,"K":5,"L":8,"M":6,"N":3,
+  "O":7,"P":3,"Q":5,"R":1,"S":4,"T":3,"U":4,
+  "V":3,"W":7,"X":4,"Y":2,"Z":3,
+  "a":4,"b":2,"c":3,"d":3,"e":3,"g":5,        //f missing
+  "h":1,"i":1,"j":2,"k":5,"l":5,"m":2,"n":5,
+  "o":4,"p":8,"q":5,"r":7,"s":8,"t":7,"u":4,
+  "v":6,"w":4,"x":4                           // y, z missing 
+}
+
+Base 59:
+  0-255 :
+    0-58    00 - 0?   
+    59-107  1? - 1?
+    108-176 2? - 2?
+    177-236 3? - 3?
+    236-255 4? - 4?   - > restricted to 19 characters in this range 
+[
+["2",67],["0",65],["1",61],["3",59],["4",21],
+["D",11],["9",8],["L",8],["p",8],["s",8],
+["W",7],["O",7],["r",7],["t",7],["E",6],
+["M",6],["v",6],["C",6],["6",5],["8",5],
+["G",5],["I",5],["K",5],["g",5],["k",5],
+["l",5],["n",5],["q",5],["Q",5],["5",4],
+["J",4],["S",4],["X",4],["a",4],["u",4],
+["w",4],["x",4],["o",4],["U",4],["7",3],
+["A",3],["P",3],["V",3],["Z",3],["c",3],
+["d",3],["e",3],["N",3],["T",3],["B",3],
+["H",3],["F",2],["Y",2],["b",2],["j",2],
+["m",2],["R",1],["h",1],["i",1]
+]
+
+Total number of characters : 512
+
+0123456789ADEFGIJKLMPSVWXYZacdegklnpqsuvwxCNOQRTbjmortBHUhi
+160 unique occurences in LSB of characters overall (probably meaningless)
+    32 - 160 (decimal) are valid ASCII 
+    20 - 9F (hex) are valid ASCII)
+
+Actuals 00 00 04 05 06 0A 0D 0D 0E 0E 0F 0G 0I 0I 0J 0K 0L 0M 0P 0P 0S 0S 0V 0W 0W 0W 0X 0X 0X 0Y 0Z 0Z 0a 0c 0d 0e 0g 0g 0k 0k 0l 0l 0n 0p 0p 0q 0q 0q 0s 0s 0s 0s 0u 0u 0v 0w 0w 0x 0x 0x  
+0 4 5 6 A D E F G I J K L M P S V W X Y Z a c d e g k l n p q s u v w x   
+0456ADEFGIJKLMPSVWXYZacdegklnpqsuvwx
+36 characters : 0456ADEFGIJKLMPSVWXYZacdegklnpqsuvwx
+
+Actuals 11 13 15 16 18 18 19 1A 1C 1C 1D 1D 1D 1D 1E 1G 1G 1J 1K 1K 1K 1K 1L 1L 1M 1M 1N 1O 1O 1O 1Q 1Q 1Q 1R 1T 1W 1W 1b 1g 1j 1j 1k 1k 1l 1m 1n 1o 1p 1q 1r 1s 1s 1t 1t 1t 1v 1v 1w   
+1 3 5 6 8 9 A C D E G J K L M N O Q R T W b g j k l m n o p q r s t v w   
+36 characters : 135689ACDEGJKLMNOQRTWbgjklmnopqrstvw
+
+Actuals 20 21 21 22 22 24 25 26 27 28 29 29 2B 2D 2D 2H 2L 2L 2L 2M 2M 2N 2O 2O 2O 2O 2Q 2S 2S 2U 2U 2U 2V 2W 2X 2Z 2a 2a 2a 2c 2d 2e 2h 2i 2k 2l 2l 2n 2n 2o 2p 2p 2p 2q 2r 2r 2r 2r 2s 2t 2t 2t 2u 2v 2x 
+0 1 2 4 5 6 7 8 9 B D H L M N O Q S U V W X Z a c d e h i k l n o p q r s t u v x 
+41 characters : 012456789BDHLMNOQSUVWXZacdehiklnopqrstuvx
+
+Actuals 30 33 33 34 34 36 39 39 3C 3C 3C 3C 3D 3D 3E 3G 3G 3H 3H 3I 3I 3I 3J 3J 3L 3L 3M 3N 3P 3Q 3T 3T 3U 3V 3W 3Y 3b 3c 3d 3e 3g 3g 3m 3n 3o 3o 3p 3p 3r 3r 3s 3t 3u 3v 3v 3w
+0 3 4 6 9 C D E G H I J L M N P Q T U V W Y b c d e g m n o p r s t u v w
+37 characters : 03469CDEGHIJLMNPQTUVWYbcdegmnoprstuvw
+
+Possible 19 values for 236-255:
+Actuals 40 45 46 47 47 48 48 49 49 49 4A 4B 4B 4D 4E 4E 4F
+0 5 6 7 9 A B D E F
+10 characters : 05679ABDEF
+
+0123456789ABCDEF - 16 characters known 
+  supports 4F <= 255 
+ 
+0123456789ABCDEF [GHI] - 
+
+62 characters total 0-9A-Za-z
+59 without f,y,z 
+16 known 
+43 characters uncertain (excludes f,y,z) 
+43! = 53 decimal digits long 
+      176 binary digits 

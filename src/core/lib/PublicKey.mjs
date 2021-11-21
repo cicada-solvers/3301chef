@@ -6,7 +6,7 @@
  * @license Apache-2.0
  */
 
-import { toHex, fromHex } from "./Hex";
+import { toHex, fromHex } from "./Hex.mjs";
 
 /**
  * Formats Distinguished Name (DN) strings.
@@ -15,7 +15,7 @@ import { toHex, fromHex } from "./Hex";
  * @param {number} indent
  * @returns {string}
  */
-export function formatDnStr (dnStr, indent) {
+export function formatDnStr(dnStr, indent) {
     const fields = dnStr.substr(1).replace(/([^\\])\//g, "$1$1/").split(/[^\\]\//);
     let output = "",
         maxKeyLen = 0,
@@ -54,7 +54,7 @@ export function formatDnStr (dnStr, indent) {
  * @param {number} indent
  * @returns {string}
  */
-export function formatByteStr (byteStr, length, indent) {
+export function formatByteStr(byteStr, length, indent) {
     byteStr = toHex(fromHex(byteStr), ":");
     length = length * 3;
     let output = "";
