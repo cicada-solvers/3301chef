@@ -5,9 +5,9 @@
  */
 
 import XRegExp from "xregexp";
-import Operation from "../Operation";
-import Utils from "../Utils";
-import OperationError from "../errors/OperationError";
+import Operation from "../Operation.mjs";
+import Utils from "../Utils.mjs";
+import OperationError from "../errors/OperationError.mjs";
 
 /**
  * Regular expression operation
@@ -45,7 +45,7 @@ class RegularExpression extends Operation {
                     },
                     {
                         name: "Email address",
-                        value: "\\b(\\w[-.\\w]*)@([-\\w]+(?:\\.[-\\w]+)*)\\.([A-Za-z]{2,4})\\b"
+                        value: "(?:[\\u00A0-\\uD7FF\\uE000-\\uFFFFa-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[\\u00A0-\\uD7FF\\uE000-\\uFFFFa-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[\\u00A0-\\uD7FF\\uE000-\\uFFFFa-z0-9](?:[\\u00A0-\\uD7FF\\uE000-\\uFFFF-a-z0-9-]*[\\u00A0-\\uD7FF\\uE000-\\uFFFFa-z0-9])?\\.)+[\\u00A0-\\uD7FF\\uE000-\\uFFFFa-z0-9](?:[\\u00A0-\\uD7FF\\uE000-\\uFFFFa-z0-9-]*[\\u00A0-\\uD7FF\\uE000-\\uFFFFa-z0-9])?|\\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\\.){3}\\])"
                     },
                     {
                         name: "URL",
@@ -163,7 +163,7 @@ class RegularExpression extends Operation {
                     case "List matches with capture groups":
                         return Utils.escapeHtml(regexList(input, regex, displayTotal, true, true));
                     default:
-                        return "Error: Invalid output format";
+                        throw new OperationError("Error: Invalid output format");
                 }
             } catch (err) {
                 throw new OperationError("Invalid regex. Details: " + err.message);
@@ -185,7 +185,7 @@ class RegularExpression extends Operation {
  * @param {boolean} captureGroups - Display each of the capture groups separately
  * @returns {string}
  */
-function regexList (input, regex, displayTotal, matches, captureGroups) {
+function regexList(input, regex, displayTotal, matches, captureGroups) {
     let output = "",
         total = 0,
         match;
@@ -225,34 +225,39 @@ function regexList (input, regex, displayTotal, matches, captureGroups) {
  * @param {boolean} displayTotal
  * @returns {string}
  */
-function regexHighlight (input, regex, displayTotal) {
+function regexHighlight(input, regex, displayTotal) {
     let output = "",
-        m,
+        title = "",
         hl = 1,
-        i = 0,
         total = 0;
+    const captureGroups = [];
 
-    while ((m = regex.exec(input))) {
-        // Moves pointer when an empty string is matched (prevents infinite loop)
-        if (m.index === regex.lastIndex) {
-            regex.lastIndex++;
+    output = input.replace(regex, (match, ...args) => {
+        args.pop(); // Throw away full string
+        const offset = args.pop(),
+            groups = args;
+
+        title = `Offset: ${offset}\n`;
+        if (groups.length) {
+            title += "Groups:\n";
+            for (let i = 0; i < groups.length; i++) {
+                title += `\t${i+1}: ${Utils.escapeHtml(groups[i] || "")}\n`;
+            }
         }
-
-        // Add up to match
-        output += Utils.escapeHtml(input.slice(i, m.index));
-
-        // Add match with highlighting
-        output += "<span class='hl"+hl+"'>" + Utils.escapeHtml(m[0]) + "</span>";
 
         // Switch highlight
         hl = hl === 1 ? 2 : 1;
 
-        i = regex.lastIndex;
-        total++;
-    }
+        // Store highlighted match and replace with a placeholder
+        captureGroups.push(`<span class='hl${hl}' title='${title}'>${Utils.escapeHtml(match)}</span>`);
+        return `[cc_capture_group_${total++}]`;
+    });
 
-    // Add all after final match
-    output += Utils.escapeHtml(input.slice(i, input.length));
+    // Safely escape all remaining text, then replace placeholders
+    output = Utils.escapeHtml(output);
+    output = output.replace(/\[cc_capture_group_(\d+)\]/g, (_, i) => {
+        return captureGroups[i];
+    });
 
     if (displayTotal)
         output = "Total found: " + total + "\n\n" + output;

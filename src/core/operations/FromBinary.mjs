@@ -4,9 +4,10 @@
  * @license Apache-2.0
  */
 
-import Operation from "../Operation";
-import Utils from "../Utils";
-import {BIN_DELIM_OPTIONS} from "../lib/Delim";
+import Operation from "../Operation.mjs";
+import Utils from "../Utils.mjs";
+import {BIN_DELIM_OPTIONS} from "../lib/Delim.mjs";
+import {fromBinary} from "../lib/Binary.mjs";
 
 /**
  * From Binary operation
@@ -30,41 +31,47 @@ class FromBinary extends Operation {
                 "name": "Delimiter",
                 "type": "option",
                 "value": BIN_DELIM_OPTIONS
+            },
+            {
+                "name": "Byte Length",
+                "type": "number",
+                "value": 8,
+                "min": 1
             }
         ];
-        this.patterns = [
+        this.checks = [
             {
-                match: "^(?:[01]{8})+$",
+                pattern: "^(?:[01]{8})+$",
                 flags: "",
                 args: ["None"]
             },
             {
-                match: "^(?:[01]{8})(?: [01]{8})*$",
+                pattern: "^(?:[01]{8})(?: [01]{8})*$",
                 flags: "",
                 args: ["Space"]
             },
             {
-                match: "^(?:[01]{8})(?:,[01]{8})*$",
+                pattern: "^(?:[01]{8})(?:,[01]{8})*$",
                 flags: "",
                 args: ["Comma"]
             },
             {
-                match: "^(?:[01]{8})(?:;[01]{8})*$",
+                pattern: "^(?:[01]{8})(?:;[01]{8})*$",
                 flags: "",
                 args: ["Semi-colon"]
             },
             {
-                match: "^(?:[01]{8})(?::[01]{8})*$",
+                pattern: "^(?:[01]{8})(?::[01]{8})*$",
                 flags: "",
                 args: ["Colon"]
             },
             {
-                match: "^(?:[01]{8})(?:\\n[01]{8})*$",
+                pattern: "^(?:[01]{8})(?:\\n[01]{8})*$",
                 flags: "",
                 args: ["Line feed"]
             },
             {
-                match: "^(?:[01]{8})(?:\\r\\n[01]{8})*$",
+                pattern: "^(?:[01]{8})(?:\\r\\n[01]{8})*$",
                 flags: "",
                 args: ["CRLF"]
             },
@@ -77,15 +84,8 @@ class FromBinary extends Operation {
      * @returns {byteArray}
      */
     run(input, args) {
-        const delimRegex = Utils.regexRep(args[0] || "Space");
-        input = input.replace(delimRegex, "");
-
-        const output = [];
-        const byteLen = 8;
-        for (let i = 0; i < input.length; i += byteLen) {
-            output.push(parseInt(input.substr(i, byteLen), 2));
-        }
-        return output;
+        const byteLen = args[1] ? args[1] : 8;
+        return fromBinary(input, args[0], byteLen);
     }
 
     /**

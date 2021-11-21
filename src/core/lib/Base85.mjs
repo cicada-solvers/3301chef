@@ -20,7 +20,7 @@ export const ALPHABET_OPTIONS = [
     },
     {
         name: "IPv6",
-        value: "0-9A-Za-z!#$%&()*+\\-;<=>?@^_`{|~}",
+        value: "0-9A-Za-z!#$%&()*+\\-;<=>?@^_`{|}~",
     }
 ];
 
@@ -32,9 +32,9 @@ export const ALPHABET_OPTIONS = [
  * @returns {string}
  */
 export function alphabetName(alphabet) {
-    alphabet = alphabet.replace("'", "&apos;");
-    alphabet = alphabet.replace("\"", "&quot;");
-    alphabet = alphabet.replace("\\", "&bsol;");
+    alphabet = alphabet.replace(/'/g, "&apos;");
+    alphabet = alphabet.replace(/"/g, "&quot;");
+    alphabet = alphabet.replace(/\\/g, "&bsol;");
     let name;
 
     ALPHABET_OPTIONS.forEach(function(a) {

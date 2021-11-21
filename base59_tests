@@ -1,0 +1,102 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|\ : lI
+Hypothesis: This one is the correct encoding (short lines are 'I', long lines are 'l' - difference in lines is very small)
+
+3N3p2l361b3v26331W492a3g4704333W213M0F0X1g2H0x1R1n3I2r0P2U162L2D1t1s3H0d0s1K2D051K1O0S1D3o1l3J1G4D0G0l0x1Q2p2a1K4E1w2Q191k3G240p224F0P3C3J1D2n1m2i1J3P2v1s2O0k1M2M0w3L3D2r0S1p153V3e3I0n3u1O0u0Z3g2U1C0Y1N3n0W3Q22130V3c0E340W1t1D2N3H470s2p0Z340g3v1Q0s0D0K2h3D3L2x1Q202n2L1C2p0A293r0D450k2e2W253U1W2r462s2X393p0X0E1q0q4B49483r3b3C1M1j0I4A48403m4E0s2S1v3T0I3t2B2k2t2O0e2l1L282a0J1L0c3C2o0X002Z2d1T2u1t1j0l1o1E3T183E1G270L0v2t06111A2U4B1O2M3d2S0x0w0q0p2V180q1D492O001v2t1k3s3G213w0W292r2O2L0g3Y0M0u3I3C1r2c2q3o300a391K
+    String has Shannon entropy: 4.803837992433094
+    
+    From Base 59 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdeghijklmnopqrstuvwx 
+    Shannon entropy: 7.405039825107474
+    From Base 59 0123456789abcdeghijklmnopqrstuvwxABCDEFGHIJKLMNOPQRSTUVWXYZ
+    Shannon entropy: 7.4400692894071865
+    From Base 59 abcdeghijklmnopqrstuvwxABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+    Shannon entropy: 7.475538892522291
+    From Base 59 ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdeghijklmnopqrstuvwx
+    Shannon entropy: 7.4591606003357125
+    xwvutsrqponmlkjihgedcba9876543210ZYXWVUTSRQPONMLKJIHGFEDCBA
+    Shannon entropy: 7.5096788538041945
+    9876543210xwvutsrqponmlkjihgedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+    Shannon entropy: 7.4543612066628855
+
+  {"0":65,"1":61,"2":67,"3":59,"4":21,"5":4,"6":5,"7":3,"8":5,"9":8,"A":3,"B":3,"C":6,"D":11,"E":6,"F":2,"G":5,"H":3,"I":5,"J":4,"K":5,"L":8,"M":6,"N":3,"O":7,"P":3,"Q":5,"R":1,"S":4,"T":3,"U":4,"V":3,"W":7,"X":4,"Y":2,"Z":3,"a":4,"b":2,"c":3,"d":3,"e":3,"g":5,"h":1,"i":1,"j":2,"k":5,"l":5,"m":2,"n":5,"o":4,"p":8,"q":5,"r":7,"s":8,"t":7,"u":4,"v":6,"w":4,"x":4}
+  [["2",67],["0",65],["1",61],["3",59],["4",21],["D",11],["9",8],["p",8],["L",8],["s",8],["W",7],["r",7],["t",7],["O",7],["v",6],["M",6],["E",6],["C",6],["6",5],["8",5],["l",5],["g",5],["n",5],["I",5],["K",5],["G",5],["Q",5],["k",5],["q",5],["5",4],["a",4],["X",4],["x",4],["U",4],["S",4],["o",4],["J",4],["w",4],["u",4],["7",3],["N",3],["H",3],["P",3],["d",3],["V",3],["e",3],["Z",3],["c",3],["A",3],["B",3],["T",3],["b",2],["F",2],["m",2],["Y",2],["j",2],["R",1],["i",1],["h",1]]
+  Total number of characters : 512
+  0123456789NplbvWagMFXHxRnIrPULDtsdKOSoJGQEwkCmiVeuZYchAqBjT
+    
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|\ : Il
+3N3p2I361b3v26331W492a3g4704333W213M0F0X1g2H0x1R1n3l2r0P2U162L2D1t1s3H0d0s1K2D051K1O0S1D3o1I3J1G4D0G0I0x1Q2p2a1K4E1w2Q191k3G240p224F0P3C3J1D2n1m2i1J3P2v1s2O0k1M2M0w3L3D2r0S1p153V3e3l0n3u1O0u0Z3g2U1C0Y1N3n0W3Q22130V3c0E340W1t1D2N3H470s2p0Z340g3v1Q0s0D0K2h3D3L2x1Q202n2L1C2p0A293r0D450k2e2W253U1W2r462s2X393p0X0E1q0q4B49483r3b3C1M1j0l4A48403m4E0s2S1v3T0l3t2B2k2t2O0e2I1L282a0J1L0c3C2o0X002Z2d1T2u1t1j0I1o1E3T183E1G270L0v2t06111A2U4B1O2M3d2S0x0w0q0p2V180q1D492O001v2t1k3s3G213w0W292r2O2L0g3Y0M0u3l3C1r2c2q3o300a391K
+    Shannon entropy: 4.803837992433094
+    
+    From Base 59 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdeghijklmnopqrstuvwx 
+    Shannon entropy: 7.356094005974742
+    From Base 59 0123456789abcdeghijklmnopqrstuvwxABCDEFGHIJKLMNOPQRSTUVWXYZ
+    Shannon entropy: 7.477431529758731
+    From Base 59 abcdeghijklmnopqrstuvwxABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+    Shannon entropy: 7.415994115292304
+    
+  {"0":65,"1":61,"2":67,"3":59,"4":21,"5":4,"6":5,"7":3,"8":5,"9":8,"A":3,"B":3,"C":6,"D":11,"E":6,"F":2,"G":5,"H":3,"I":5,"J":4,"K":5,"L":8,"M":6,"N":3,"O":7,"P":3,"Q":5,"R":1,"S":4,"T":3,"U":4,"V":3,"W":7,"X":4,"Y":2,"Z":3,"a":4,"b":2,"c":3,"d":3,"e":3,"g":5,"h":1,"i":1,"j":2,"k":5,"l":5,"m":2,"n":5,"o":4,"p":8,"q":5,"r":7,"s":8,"t":7,"u":4,"v":6,"w":4,"x":4}
+  [["2",67],["0",65],["1",61],["3",59],["4",21],["D",11],["9",8],["p",8],["L",8],["s",8],["W",7],["r",7],["t",7],["O",7],["v",6],["M",6],["E",6],["C",6],["6",5],["8",5],["I",5],["g",5],["n",5],["l",5],["K",5],["G",5],["Q",5],["k",5],["q",5],["5",4],["a",4],["X",4],["x",4],["U",4],["S",4],["o",4],["J",4],["w",4],["u",4],["7",3],["N",3],["H",3],["P",3],["d",3],["V",3],["e",3],["Z",3],["c",3],["A",3],["B",3],["T",3],["b",2],["F",2],["m",2],["Y",2],["j",2],["R",1],["i",1],["h",1]]
+  Total number of characters : 512
+  0123456789NpIbvWagMFXHxRnlrPULDtsdKOSoJGQEwkCmiVeuZYchAqBjT
+      
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, dignissimos provident. Alias, aliquid, cum cumque deleniti dignissimos eos exercitationem explicabo illum inventore laboriosam nihil nobis nostrum praesentium recusandae sequi, sint!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, dignissimos provident. Alias, aliquid, cum cumque dele
+  Converted to Base 59 with 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdeghijklmnopqrstuvwx
+    19x76KoFm8cdm3n7hh8l52IT9P418kiIQINECW4pHebwe5idFo0D4ZSSvcRS3oECGwPGQ3k7MxG6JJLmJIEcuPbk3V7puXPWBYaGiPccv84O2eLwROFKla76C0WrhDAs3DWJuVAWdJ2gQEDr8WMjgVheLrpA9P0ZcTt1HmpH8GxeZ4kE5PLM08U8XXE1nol32RqiHnIaS9rmdPg7jV1khPOHXkq0glv48Wgd7j3dsI4j0kb75hFbe9nbo4UJUlNBGsIvIVSr7RnSw5QTKtxEXDMWbF4nocm33RX6AhrxHT9BjPTPjmTZcI0bkVwkwUuLaGZdUHscvrFZ5u9b0LPGbtC9FJoI6ddCalEmpPxC8BKsB9p26WdUrN6mUcbmd8q2cZb10XOiCmTBggIjJDwRTIjdHgNeKJIq0xiO2gYHs3qDLEHKH5KlnuOReroKCP2vFcHZJ9NxbtUoiC0TeMirHRnRcLhXwSwKKgEVSseMs8kaLo8YH1CUg0dcm7l2Lrgw
+
+  Unencoded string has length 376
+  Unencoded string has Shannon entropy: 4.200832350573291
+  Encoded Base 59 string has length 512
+  Encoded Base 59 string has Shannon entropy: 5.814520818767075
+  
+  From Base 59 w/ wrong alphabet 0123456789abcdeghijklmnopqrstuvwxABCDEFGHIJKLMNOPQRSTUVWXYZ
+  Shannon entropy: 7.381996941099683
+  From Base 59 abcdeghijklmnopqrstuvwxABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+  Shannon entropy: 7.423634923040936
+  
+  {"0":12,"1":7,"2":9,"3":10,"4":9,"5":7,"6":7,"7":10,"8":13,"9":10,"A":4,"B":6,"C":10,"D":7,"E":10,"F":8,"G":8,"H":14,"I":13,"J":10,"K":10,"L":10,"M":6,"N":5,"O":6,"P":14,"Q":4,"R":9,"S":8,"T":9,"U":9,"V":7,"W":9,"X":8,"Y":3,"Z":8,"a":6,"b":12,"c":14,"d":13,"e":10,"g":12,"h":8,"i":8,"j":8,"k":10,"l":8,"m":12,"n":8,"o":10,"p":6,"q":5,"r":11,"s":8,"t":4,"u":6,"v":6,"w":10,"x":8}
+  [["c",14],["P",14],["H",14],["8",13],["d",13],["I",13],["0",12],["m",12],["b",12],["g",12],["r",11],["3",10],["7",10],["9",10],["K",10],["o",10],["k",10],["E",10],["C",10],["e",10],["w",10],["J",10],["L",10],["2",9],["4",9],["T",9],["W",9],["R",9],["U",9],["x",8],["F",8],["n",8],["h",8],["l",8],["i",8],["Z",8],["S",8],["G",8],["X",8],["s",8],["j",8],["1",7],["5",7],["6",7],["D",7],["V",7],["p",6],["v",6],["M",6],["u",6],["B",6],["a",6],["O",6],["N",5],["q",5],["Q",4],["A",4],["t",4],["Y",3]]
+  Total number of characters : 512
+  0123456789xKoFmcdnhlITPkiQNECWpHebwDZSvRGMJLuVXBYaOrAsgjtUq
+
+  Converted "lorem .." to Base 62 for comparison
+  lxLRxK4Y2i6F3LqBTDX1zWQagCMYjhKleJp3a4ws9zmOUgLaX0VIPaWgK8voYXChQ8htcNuUHQpE2WRwhEhPT2jXLwLwqW2Rnw6XYjEB2NVwGRaMXsBI63KpXqqohsfVZrH9Ps3qTno8XFzS29CuFSk37vv03VbokOo8JqIFLno52licp2ZWVl0CXd4X94aPBwo6TVvK17JjvMv7vhKNeihFZVSWLHpQYL1Dkk8IXMUyLWEPimqzC1QIjTqT08PcqUEyo7E5gXaFrray3Lb6vIwYqA7hugBspVq2hLrZikGZa4YgR9s3MacOPL
+  {"0":4,"1":4,"2":9,"3":8,"4":5,"5":2,"6":5,"7":5,"8":6,"9":5,"A":1,"B":5,"C":5,"D":2,"E":6,"F":6,"G":2,"H":3,"I":6,"J":3,"K":6,"L":12,"M":5,"N":3,"O":3,"P":7,"Q":5,"R":5,"S":3,"T":6,"U":4,"V":8,"W":7,"X":12,"Y":7,"Z":5,"a":10,"b":2,"c":4,"d":1,"e":2,"f":1,"g":6,"h":10,"i":5,"j":5,"k":5,"l":4,"m":2,"n":3,"o":8,"p":6,"q":11,"r":4,"s":6,"t":1,"u":3,"v":8,"w":8,"x":2,"y":3,"z":4}
+  [["L",12],["X",12],["q",11],["a",10],["h",10],["2",9],["3",8],["w",8],["V",8],["v",8],["o",8],["Y",7],["W",7],["P",7],["8",6],["K",6],["F",6],["T",6],["g",6],["p",6],["s",6],["I",6],["E",6],["4",5],["6",5],["7",5],["9",5],["R",5],["i",5],["B",5],["Q",5],["C",5],["M",5],["j",5],["Z",5],["k",5],["0",4],["1",4],["l",4],["z",4],["U",4],["c",4],["r",4],["J",3],["O",3],["N",3],["u",3],["H",3],["n",3],["S",3],["y",3],["5",2],["x",2],["D",2],["e",2],["m",2],["G",2],["b",2],["t",1],["f",1],["d",1],["A",1]]
+  Total number of characters : 314
+  62 characters appear : 0123456789lxLRKYiFqBTDXzWQagCMjheJpwsmOUVIPvotcNuHEnGfZrSkbdyA
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  (11:private-key(3:rsa(1:n129: ��W���ے��!��J�\�alI�$���7E&('6���Q�d
+  \Y��8���"���GF4|��Bl�(��-������Q_HA���;1�m�[ 4A����$�9X���=����:F���wM-n��@��)(1:e3: )(1:d128:DJ� ;��k��Y⧧}�}i�s��-JFر��̇�*�|�i���=*pcDQ����7X�w�Es|l|�
+\���	~j�ު��4Ƭ�vΪm���h&�U�[�8�O��h��ZQ��ӵ:#��E�I���)(1:p65: ����복�ܛ=�01f**�n����,��*2v�?��C�畁>���_���b�*�\>{)(1:q65: ۍi[�pАL� �&��w�Cp�pUo|����ZL~
+  1�\!�yZ�"%D��lgV��ln�C�)(1:u64:E�q��Ik�����ri�_����ΛU�߬�:��O�4������i���4��7,�
+�ry)))
+
+Converted to Base 59 with 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdeghijklmnopqrstuvwx
+2IKHCdrKnDTk4AVDbaRXWSkSk2Ue9VokHvSS9kScb07ndu34A04hTuBQn2TPIbsdXx4JGJCREvj1dMhTlo7RMrnc82sDiox2ie4u5iAVqCd4847SGqer83rUQS9dLqxREr6QbguNQY84ij4jXdK5jXFwD5iRtjqOlg1T57hi87BA7IONhxjHpUQkGjx7T0ioZZtMtpvD6Dnd54X6WI4B3PZrABqUFAZFdcYhB0piAVIhxG4CuD0AEc5KGUCQOUYIm6Q6PNLAVBH3FBmuvtKR1omXOq7H6Fe7hptxF7wgxUTSgtH0PkY1uOXWCuWYxdhVlN2m5BY8W35k0j6BUumLTtkb8P1MGrW6knwq5jrDclcG02kJrsvGbOUV0eehvFe2H2VTasLGw2tg81CJnC1qQCP20FEmJnlwDGXT0jX3nbmMZKpdCdLMl7rMA2iUPZ8OMVpOJI9dA7Djk4o4sTHY21Yu78t632sNZka9FklRjp5I3FFg5DNOvjHLiHFu9A8DrxSFxVwlqKopnAlS76Xs9VdZODKDp8KlnMwwJbSB0G8UjAjuqX1RQ6O8EV5HB96SPqsF7q9ZRvOJp8P936GcwDN5WT9MSs85xw59HNLKnUcH19o3WDRqRe4BrZD9wxMb651oawgBXFYX8xmp8r2x46B3MGqsxdhJKxZPRiinec5cWCvdTeZ01g9UnFvpYmnOUZurxGBRx9AJa1cwnuMeQ5ct8rET5r1KDrlsXuQv5PwxVamAijioD6MIYkOgERKM8jH0I7bKvSuh5paZ0qTbOgGhKrKd8jEx5Q71BIEh2SYF91CQOgZp53Q5Qr9hNBs9GWKkqT6iZDVxw4jBcnO06ZuwpvBAYk65ce3KTp7BeZjiYMPWxsN0RxW8a3UKqAj0L8uXu7EirpZRLhBbU9ub4qGh3j5K7Uwl7Aw7wv20khIWcKwYXmD6YElkkWrmab2plMijA8EWFncAoajkOdikZV739TDVUNn5tsNAITU4AbhsRNQPNM1Kd9h9Tu987nmvIE8HwYiIctYc9gKvxe0pVVY8R2kFC7qUL0guvpCrBlAdruiGrKc5M69inGusV8n4bLHW4M1q2GG2oBMSNGFPPOpMdqJo1RDMeGT3VGWBpeIHS6ltAtZZGTHRHAksub0agtvbN7CtYFqb2aeegBb4Qnw28kMllle6RZq9BYaq8ZVgvBPLjMgWeSji1pc28DaqpAP5J5S3xsc
+
+  Unencoded length 508 
+  Unencoded string has Shannon entropy: 4.458402633901767
+  Encoded length 1227 
+  Encoded Base 59 string has Shannon entropy: 5.849192979744995
+  
+  From Base 59 w/ wrong alphabet 0123456789abcdeghijklmnopqrstuvwxABCDEFGHIJKLMNOPQRSTUVWXYZ
+  Shannon entropy: 6.294048732501765
+  From Base 59 abcdeghijklmnopqrstuvwxABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+  Shannon entropy: 6.364198970026465
+  
+  {"0":22,"1":20,"2":24,"3":18,"4":22,"5":30,"6":23,"7":26,"8":31,"9":27,"A":27,"B":27,"C":15,"D":24,"E":13,"F":21,"G":25,"H":19,"I":16,"J":12,"K":24,"L":12,"M":25,"N":16,"O":19,"P":17,"Q":17,"R":21,"S":19,"T":22,"U":20,"V":21,"W":18,"X":16,"Y":21,"Z":24,"a":14,"b":20,"c":21,"d":21,"e":20,"g":17,"h":19,"i":23,"j":26,"k":25,"l":19,"m":13,"n":23,"o":13,"p":24,"q":25,"r":24,"s":18,"t":16,"u":25,"v":19,"w":22,"x":26}
+  [["8",31],["5",30],["9",27],["A",27],["B",27],["7",26],["x",26],["j",26],["k",25],["u",25],["G",25],["M",25],["q",25],["2",24],["K",24],["r",24],["D",24],["p",24],["Z",24],["6",23],["n",23],["i",23],["0",22],["4",22],["T",22],["w",22],["d",21],["V",21],["R",21],["c",21],["Y",21],["F",21],["1",20],["b",20],["U",20],["e",20],["H",19],["S",19],["v",19],["h",19],["l",19],["O",19],["3",18],["W",18],["s",18],["Q",17],["P",17],["g",17],["I",16],["X",16],["N",16],["t",16],["C",15],["a",14],["o",13],["E",13],["m",13],["J",12],["L",12]]
+  Total number of characters : 1227
+  0123456789IKHCdrnDTkAVbaRXWSUeovcuhBQPsxJGEjMliqLgNYFwtOpZm
+
+
+  Converted "11:private" to Base 62 for comparison
+  TZSFt6xZ4EDCwvCrgV9TwdeNUSddM9Z1h9wpBuYASVriqPCEw2WOLDiDClkRhxL2csYQ7g9P2Zy9HRUHS7EzGCxITo0ktc0GcjK8LMANSOoOOiJYF398qYF29cIAOPWJj3LVF8HUk2aAgl6iTXaZtDGmYqdwyIRUaC8i1qcPRwIXKXrYYgaKD3y7Jp1yQfrVB8xL0tICwEbFYZ66IGAfrOFwIaTKeytct6QUvJbI32t1UslxLaiVJpZgmbaV4TDWpFj9qy8HQgNKkb4JveH3t3VzKs9SoshmHa5E4LCY5De3E9LVpNxGQAic8uYTqlzcn2U8iCEsxLX21l4NQTeQy4YAX39jWpdwMPNhM7BPeQkcxcbr87cPYcEeLol89gG6KDEueIZl4a656BhuZSct2ZV4UbCYq8m1PmaTSFxsB98L92LuKgMcY9gaIVjMyeM5EVYc1BLUd7jTR2M6xx2faREv2aLckChi4awtR1ia9MWwJCH2NMqTfpPbsvYPJOEzR7QKIxQtOYDeB4oheRNUdBdNqPuta97Czj7doUrh4OFYdJmGxsYXvZOEoNLDRSeZ72EKuMAmww0qRCC9IAGbln9RyfxXSzAjJGjoPA2pgyDGnLvlPqKIu5H95fL6CzAnNzpYZFhOpmIlE2SEtTCpF4CqnM8OYfsE3TQQM2QrByWzWUVsKJT043CBSFDGf9UiertoAbFsXwCVCbtd1EljMYi6kw51e0QqT5ebjT39XUtrpzdN2CV9c02UgvViZg2Gjnx9zwwrFLQrQvQ9teKYxebezFvpk5QYSuTBapb8BJyJsdCglqK3FsEqem6hbR3LrJ3aRhKpTI3jcjT00YcvJxN8eZ7NX72YT7NacRFc8qgwaWLAL4MgWK8iP4zm9XZ7SpTxdGfpNpyvyS5vlPhMsrSY5FmIxFU2SKrlX0TtKTxF77klLcwP2pelQxYEtGxssughRIhEKSTCvmBNMyIYUVLLs3BL25DZOdYjuC0hchpULgpfxUIPfBGf6fMLidupFTroPdb7kTRkGbovi6j1zzNTtU965x3w9Ip6kLlrXA9lGOJfif2NftZdPlfQ5GNVwbiDL1TuG2Ued5oyveRfBzTuTPFZIJxHqscbRt46Ca4E4LOuUIGuZUd4eLlmLvO7dhOWZtroE8IxTOSsFGGcPapwljpTqbaz5SBkOd9MXzlCzK2h5E7WE6qSdnQ7hZ7YCYiuQ 
+  {"0":11,"1":12,"2":28,"3":17,"4":19,"5":17,"6":18,"7":21,"8":18,"9":30,"A":15,"B":17,"C":28,"D":14,"E":25,"F":23,"G":22,"H":9,"I":23,"J":17,"K":20,"L":32,"M":19,"N":20,"O":19,"P":21,"Q":22,"R":19,"S":21,"T":32,"U":23,"V":17,"W":11,"X":14,"Y":32,"Z":22,"a":23,"b":19,"c":25,"d":23,"e":24,"f":18,"g":17,"h":19,"i":19,"j":17,"k":13,"l":22,"m":13,"n":7,"o":13,"p":25,"q":19,"r":18,"s":19,"t":23,"u":17,"v":17,"w":22,"x":26,"y":16,"z":19}
+  [["T",32],["Y",32],["L",32],["9",30],["2",28],["C",28],["x",26],["E",25],["p",25],["c",25],["e",24],["F",23],["t",23],["d",23],["U",23],["I",23],["a",23],["Z",22],["w",22],["l",22],["Q",22],["G",22],["7",21],["S",21],["P",21],["N",20],["K",20],["4",19],["M",19],["h",19],["i",19],["q",19],["O",19],["R",19],["s",19],["z",19],["b",19],["6",18],["8",18],["r",18],["f",18],["3",17],["5",17],["v",17],["g",17],["V",17],["B",17],["u",17],["j",17],["J",17],["y",16],["A",15],["D",14],["X",14],["k",13],["o",13],["m",13],["1",12],["0",11],["W",11],["H",9],["n",7]]
+  Total number of characters : 1221
+  0123456789TZSFtxEDCwvrgVdeNUMhpBuYAiqPWOLlkRcsQyHzGIojKJaXmfbn
+  62 characters appear : 0123456789TZSFtxEDCwvrgVdeNUMhpBuYAiqPWOLlkRcsQyHzGIojKJaXmfbn
